@@ -5,7 +5,7 @@ async function getAllUsersDB() {
 }
 
 async function getUserByIdDB(_id) {
-    return await Collections.User.find({_id: new ObjectId(_id)})
+    return await Collections.User.find({ _id: new ObjectId(_id) })
 }
 
 async function createUserDB(obj) {
@@ -14,12 +14,12 @@ async function createUserDB(obj) {
 }
 
 async function deleteUserDB(_id) {
-    return await Collections.User.deleteOne({_id: new ObjectId(_id)})
+    return await Collections.User.deleteOne({ _id: new ObjectId(_id) })
 }
 
 async function updateUserDB(_id, obj) {
-    await Collections.User.updateOne({_id: new ObjectId(_id)}, obj)
+    await Collections.User.updateOne({ _id: new ObjectId(_id) }, obj)
     return 'succes'
 }
 
-export {getAllUsersDB, getUserByIdDB, createUserDB, deleteUserDB, updateUserDB}
+export { getAllUsersDB, getUserByIdDB, createUserDB, deleteUserDB, updateUserDB }
