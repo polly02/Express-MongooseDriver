@@ -20,4 +20,4 @@ async function updateUser(_id, obj) {
     return await updateUserDB(_id, obj)
 }
 
-export {getAllUsers, createUser, getUserById, deleteUser, updateUser}
+export { getAllUsers, createUser, getUserById, deleteUser, updateUser }
